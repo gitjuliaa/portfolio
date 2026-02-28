@@ -63,8 +63,6 @@ export interface myShowCasesTypes {
   description: string;
   link: string;
   type: string;
-  theme: string;
-  pages: number;
   image: StaticImageData | string;
 }
 

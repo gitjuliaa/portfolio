@@ -29,8 +29,7 @@ export default function SideNavbar({ isMenuOpen }: SideNavbarProps) {
         maxWidth: isMenuOpen ? '140px' : '13%',
       }}
     >
-      <div className='relative flex h-full flex-none flex-col flex-nowrap items-end justify-between p-[20px_30px_40px_0px]'>
-        <Logo />
+      <div className='relative flex h-full flex-none flex-col flex-nowrap items-end justify-between p-[300px_30px_40px_0px]'>
         <NavigationListsItem />
         <BackToTop />
       </div>
@@ -38,25 +37,7 @@ export default function SideNavbar({ isMenuOpen }: SideNavbarProps) {
   );
 }
 
-const Logo = () => {
-  return (
-    <Link
-      href='/'
-      aria-label='Go to homepage'
-      className='bg-border-color relative flex aspect-square h-auto w-[50px] shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-zinc-800 p-1 transition-all duration-300 hover:scale-95'
-    >
-      <div className='absolute inset-0 rounded-full'>
-        <Image
-          src={AvatarMe}
-          fill
-          quality={100}
-          alt='Avatar'
-          className='block h-full w-full object-fill object-center opacity-80'
-        />
-      </div>
-    </Link>
-  );
-};
+
 
 const NavigationListsItem = () => {
   const pathname = usePathname();

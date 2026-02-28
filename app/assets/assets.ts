@@ -6,12 +6,16 @@ import briefcaseIconley from '@assets/icons/briefcase-icon.svg';
 import briefcaseIconLight from '@assets/icons/briefcase-light.svg';
 import calendarIcon from '@assets/icons/calendar.svg';
 import calendarIconLight from '@assets/icons/calendar-light.svg';
+import codeCampLogo from '@assets/icons/code-camp-logo.svg';
+import codeCampLight from '@assets/icons/code-camp-light.svg';
 import emailIcon from '@assets/icons/email-icon.svg';
 import emailIconLight from '@assets/icons/email-light.svg';
 import flyIcon from '@assets/icons/fly.svg';
 import flyIconLight from '@assets/icons/fly-light.svg';
 import graphicDesignIcon from '@assets/icons/graphic-design.svg';
 import graphicDesignIconLight from '@assets/icons/graphic-design-light.svg';
+import inspiritAILogo from '@assets/icons/inspiritai-logo.svg';
+import inspiritAILight from '@assets/icons/inspiritai-light.svg';
 import linkIcon from '@assets/icons/link-icon.svg';
 import linkIconLight from '@assets/icons/link-icon-light.svg';
 import locationIcon from '@assets/icons/location.svg';
@@ -29,8 +33,8 @@ import stackIcon from '@assets/icons/stack.svg';
 import stackIconLight from '@assets/icons/stack-light.svg';
 import starLig from '@assets/icons/starlig.svg';
 import starLigLight from '@assets/icons/starlig-light.svg';
-import vortexLogoLight from '@assets/icons/vortex-light.svg';
-import vortexLogo from '@assets/icons/vortex-logo.svg';
+import hillsGrammarLogo from '@assets/icons/hills-grammar-logo.svg';
+import hillsGrammarLight from '@assets/icons/hills-grammar-light.svg';
 import webDesignIcon from '@assets/icons/web-design.svg';
 import webDesignIconLight from '@assets/icons/web-design-light.svg';
 import webDevIcon from '@assets/icons/web-dev.svg';
@@ -80,6 +84,8 @@ export {
   briefcaseIconLight,
   calendarIcon,
   calendarIconLight,
+  codeCampLogo,
+  codeCampLight,
   client_1,
   client_2,
   client_3,
@@ -99,8 +105,12 @@ export {
   graphicDesignIcon,
   graphicDesignIconLight,
   handGif,
+  hillsGrammarLogo,
+  hillsGrammarLight,
   instagramIcon,
   instagramIconLight,
+  inspiritAILogo,
+  inspiritAILight,
   linkedInIcon,
   linkedInIconLight,
   linkIcon,
@@ -131,8 +141,6 @@ export {
   starLigLight,
   tiktok,
   twitter,
-  vortexLogo,
-  vortexLogoLight,
   webDesignIcon,
   webDesignIconLight,
   webDevIcon,

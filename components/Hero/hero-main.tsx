@@ -4,6 +4,8 @@ import Image from 'next/image';
 
 import {
   AvatarMe,
+  briefcaseIconley,
+  briefcaseIconLight,
   calendarIcon,
   calendarIconLight,
   emailIcon,
@@ -13,7 +15,8 @@ import {
 
 import DynamicIcon from '../dynamic-icon';
 import AnimatedImageGrid from '../ui/AnimatedImageGrid';
-import ScheduleButton from '../ui/ScheduleButton';
+import ResumeButton from '../ui/ResumeButton';
+import { BriefcaseIcon } from 'lucide-react';
 
 export default function HeroMain() {
   const handleClick = () => {
@@ -27,7 +30,7 @@ export default function HeroMain() {
   return (
     <section className='relative flex h-min w-full flex-none flex-col flex-nowrap items-center justify-start gap-5 overflow-visible p-0 lg:flex-row'>
       {/* Left side */}
-      <div className='relative flex h-min w-full flex-none flex-col flex-nowrap items-start justify-center gap-2.5 self-start overflow-hidden p-0 md:w-min md:items-center'>
+      <div className='relative flex h-min w-[150px] flex-none flex-col flex-nowrap items-start justify-center gap-2.5 self-start overflow-hidden p-0 md:w-min md:items-center'>
         <AnimatedImageGrid image={AvatarMe} />
       </div>
       {/* Right side */}
@@ -74,7 +77,7 @@ export default function HeroMain() {
             viewport={{ once: true }}
             className='text-3xl leading-[1.2em] font-bold text-white sm:text-4xl'
           >
-            Pragadesh V
+            Julia A
           </motion.h1>
         </div>
 
@@ -93,8 +96,7 @@ export default function HeroMain() {
           viewport={{ once: true }}
           className='text-light-gray-2 mb-4 leading-[150%] font-medium sm:text-[18px]'
         >
-          Experienced web developer from Kerala, India, with a passion for crafting seamless digital
-          experiences and a proven track record.
+          Penultimate year Computer Science student based in Sydney with 1 YOE building web applications and and user centric digital solutions
         </motion.p>
 
         <motion.div
@@ -114,10 +116,10 @@ export default function HeroMain() {
         >
           <EmailButton handleClick={handleClick} />
 
-          <ScheduleButton
-            darkIcon={calendarIcon}
-            lightIcon={calendarIconLight}
-            label='Schedule call'
+          <ResumeButton
+            darkIcon={briefcaseIconley}
+            lightIcon={briefcaseIconLight}
+            label='Resume'
           />
         </motion.div>
       </div>

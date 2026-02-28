@@ -4,7 +4,6 @@ import Link from 'next/link';
 
 import { AvatarMe } from '@/app/assets/assets';
 
-import AvailableForWorkBtn from '../ui/AvailableForWorkBtn';
 
 interface MobileNavProps {
   isMenuOpen: boolean;
@@ -16,7 +15,6 @@ export default function MobileNav({ isMenuOpen, toggleMenu }: MobileNavProps) {
     <div className='flex w-full items-center justify-between sm:hidden'>
       <MobileLogo />
       <div className='flex items-center gap-2'>
-        <AvailableForWorkBtn />
         <ToogleMenuButton
           isMenuOpen={isMenuOpen}
           toggleMenu={toggleMenu}

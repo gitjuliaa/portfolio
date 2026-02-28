@@ -8,6 +8,8 @@ import {
   client_2,
   client_3,
   client_4,
+  codeCampLogo,
+  codeCampLight,
   discord,
   dribble,
   dribbleIcon,
@@ -17,8 +19,12 @@ import {
   framerIcon,
   graphicDesignIcon,
   graphicDesignIconLight,
+  hillsGrammarLogo,
+  hillsGrammarLight,
   instagramIcon,
   instagramIconLight,
+  inspiritAILogo,
+  inspiritAILight,
   linkedInIcon,
   linkedInIconLight,
   notionIcon,
@@ -34,8 +40,6 @@ import {
   slackIcon,
   snapchat,
   spotify,
-  vortexLogo,
-  vortexLogoLight,
   webDesignIcon,
   webDesignIconLight,
   webDevIcon,
@@ -66,7 +70,7 @@ export const pagesLists: pagesListsType[] = [
     href: '/',
     icon: <User />,
   },
-  {
+  /*{
     id: 2,
     title: 'Services',
     href: '/services',
@@ -77,38 +81,23 @@ export const pagesLists: pagesListsType[] = [
     title: 'Contact',
     href: '/contact',
     icon: <Mail />,
-  },
+  },*/
 ];
 
 export const socialLists: socialListsTypes[] = [
   {
     id: 1,
-    title: 'Instagram',
-    icon: <Instagram size={22} />,
-    link: 'https://www.instagram.com/',
+    title: 'LinkedIn',
+    icon: <img src={linkedInIcon.src || linkedInIcon} alt="LinkedIn" className="w-5 h-5 opacity-70 group-hover:opacity-100 transition-opacity" />,
+    link: 'https://www.linkedin.com/in/julia-anderson-0b8634222/',
   },
   {
     id: 2,
     title: 'Github',
     icon: <Github size={22} />,
-    link: 'https://github.com/psparwez/portfolio',
+    link: 'https://github.com/gitjuliaa',
   },
-  {
-    id: 3,
-    title: 'Twitter',
-    icon: (
-      <svg
-        xmlns='http://www.w3.org/2000/svg'
-        viewBox='0 0 24 24'
-        fill='currentColor'
-        width='22'
-        height='22'
-      >
-        <path d='M10.4883 14.651L15.25 21H22.25L14.3917 10.5223L20.9308 3H18.2808L13.1643 8.88578L8.75 3H1.75L9.26086 13.0145L2.31915 21H4.96917L10.4883 14.651ZM16.25 19L5.75 5H7.75L18.25 19H16.25Z'></path>
-      </svg>
-    ),
-    link: 'https://www.twitter.com/psparwez',
-  },
+
 ];
 
 export const socialBrands: socialBrandsTypes[] = [
@@ -158,63 +147,53 @@ export const socialBrands: socialBrandsTypes[] = [
 
 export const counterLists: counterListsType[] = [
   {
-    id: 1,
-    title: 'Happy Clients',
-    value: 45,
-  },
-  {
     id: 2,
     title: 'Year of Experience',
-    value: 2,
-  },
-  {
-    id: 3,
-    title: 'Completed Tasks',
-    value: 40,
+    value: 1,
   },
   {
     id: 4,
     title: 'Awards Received',
-    value: 6,
+    value: 4,
   },
 ];
 
 export const myExperience: myExperienceTypes[] = [
   {
     id: 1,
-    year: '2023 - Present',
-    title: 'Product Designer',
-    company: 'Vortex',
-    label: 'Tech Firm',
+    year: 'Jan 2025 - Present',
+    title: 'Digital Developer',
+    company: 'The Hills Grammar School',
+    label: 'Education',
     description:
-      'Headed product design initiatives, defined design strategy, and ensured alignment with business objectives for market-leading products.',
-    link: 'vortex.com',
-    logo: vortexLogo,
-    logoLight: vortexLogoLight,
+      "Developed and maintained the school's backend systems, ensuring seamless digital operations and enhancing the online experience for students, staff, and parents.",
+    link: 'https://www.hillsgrammar.nsw.edu.au/',
+    logo: hillsGrammarLogo,
+    logoLight: hillsGrammarLight,
   },
   {
     id: 2,
-    year: '2022 - 2023',
-    title: 'Senior UI/UX Designer',
-    company: 'PixelWorks',
-    label: 'Design Studio',
+    year: 'Jan 2025 - Present',
+    title: 'Code Instructor',
+    company: 'Code Camp Australia',
+    label: 'Education',
     description:
-      'Provided leadership in UI/UX design, mentored junior designers, and collaborated with cross-functional teams for product excellence.',
-    link: 'pixelworks.io',
-    logo: pixelworksLogo,
-    logoLight: pixelworksLogoLight,
+      'Taught coding fundamentals and web development to students, fostering a passion for technology and empowering the next generation of developers.',
+    link: 'https://codecamp.com.au',
+    logo: codeCampLogo,
+    logoLight: codeCampLight,
   },
   {
     id: 3,
-    year: '2020 - 2022',
-    title: 'UI/UX Designer',
-    company: 'Athon',
-    label: 'Tech Start-up',
+    year: 'April 2023 - June 2023',
+    title: 'A.I. Scholar',
+    company: 'InspiritAI',
+    label: 'Research',
     description:
-      'Led UI/UX design projects from concept to delivery, conducted user testing, and iterated designs for optimal user experience.',
-    link: 'athon.com',
-    logo: athonLogo,
-    logoLight: athonLogoLight,
+      'Led research initiatives in machine learning, contributing to advancements in machine learning algorithms and their applications across various industries.',
+    link: 'https://inspiritai.com',
+    logo: inspiritAILogo,
+    logoLight: inspiritAILight,
   },
 ];
 
@@ -311,9 +290,7 @@ export const myShowCases: myShowCasesTypes[] = [
     description: 'Showcasing expertise, passion, and innovation in the realm of development.',
     link: 'vortex.com',
     type: 'Portfolio',
-    theme: 'Dark',
-    pages: 4,
-    image: project_1,
+    image: project_1
   },
   {
     id: 2,
@@ -321,9 +298,7 @@ export const myShowCases: myShowCasesTypes[] = [
     description: 'Empowering fitness enthusiasts with an immersive online experience.',
     link: 'zenith.com',
     type: 'Fitness',
-    theme: 'Light',
-    pages: 5,
-    image: project_2,
+    image: project_2
   },
   {
     id: 3,
@@ -331,9 +306,7 @@ export const myShowCases: myShowCasesTypes[] = [
     description: 'Transforming ideas into digital realities with creativity and expertise.',
     link: 'novus.com',
     type: 'Business',
-    theme: 'Dark',
-    pages: 6,
-    image: project_3,
+    image: project_3
   },
   {
     id: 4,
@@ -342,9 +315,7 @@ export const myShowCases: myShowCasesTypes[] = [
       'Setting the pinnacle of digital excellence with cutting-edge solutions and creativity.',
     link: 'apex.com',
     type: 'Business',
-    theme: 'Light',
-    pages: 6,
-    image: project_4,
+    image: project_4
   },
 ];
 

@@ -31,7 +31,7 @@ export default function ShowCase({
     >
       <div className='relative h-auto w-full flex-none'>
         <SectionHeading
-          title='Creative Design Showcase'
+          title='Projects'
           darkImage={flyIconDark}
           lightImage={flyIconLight}
           description='Explore a collection of my most innovative and visually stunning design works.'
@@ -108,15 +108,9 @@ export default function ShowCase({
                     </div>
                     <div className='bg-medium-gray relative aspect-square h-[5px] w-[5px] flex-none rounded-full'></div>
                     <div className='relative flex h-auto w-auto flex-none shrink-0 flex-col whitespace-pre'>
-                      <p className='text-light-gray-2 text-[15px] font-medium'>
-                        {item.pages} Pages
-                      </p>
                     </div>
                     <div className='bg-medium-gray relative aspect-square h-[5px] w-[5px] flex-none rounded-full'></div>
                     <div className='relative flex h-auto w-auto flex-none shrink-0 flex-col whitespace-pre'>
-                      <p className='text-light-gray-2 text-[15px] font-medium'>
-                        {item.theme} Theme
-                      </p>
                     </div>
                   </div>
                 </div>

@@ -5,9 +5,8 @@ import { calendarIcon, calendarIconLight, zapIcon, zapIconLight } from '@/app/as
 import DynamicIcon from '@/components/dynamic-icon';
 import MyStack from '@/components/MyStack/MyStack';
 import SectionHeading from '@/components/SectionHeading';
-import ShowCase from '@/components/ShowCase';
-import Testimonials from '@/components/Testimonials';
-import ScheduleButton from '@/components/ui/ScheduleButton';
+import ShowCase from '@/components/Projects';
+import ScheduleButton from '@/components/ui/ResumeButton';
 import { myServicesPlans } from '@/data';
 
 import InfoRow from './info-row';
@@ -110,7 +109,6 @@ export default function ServicesSection() {
           isMore={false}
           showData={4}
         />
-        <Testimonials />
       </div>
     </div>
   );

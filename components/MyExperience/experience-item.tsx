@@ -28,8 +28,8 @@ export default function ExperienceItem() {
           >
             <div className='relative flex h-min w-full flex-none flex-nowrap items-center justify-between overflow-visible p-0'>
               <div className='relative flex h-min flex-1 items-center justify-start gap-2 overflow-visible p-0'>
-                <div className='bg-dark-gray-4 border-border-color relative float-none flex h-min w-min items-center justify-center gap-2.5 overflow-visible rounded-lg border p-2.5'>
-                  <div className='relative aspect-square h-auto w-[30px] flex-none overflow-visible'>
+                <div className='bg-dark-gray-4 border-border-color relative float-none flex h-[50px] w-[50px] items-center justify-center gap-2.5 overflow-visible rounded-lg border p-3'>
+                  <div className='relative aspect-square h-full w-full flex-none overflow-visible'>
                     <figure className='absolute inset-0 block'>
                       <DynamicIcon
                         width={30}
