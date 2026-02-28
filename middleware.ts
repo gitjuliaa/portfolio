@@ -1,11 +1,12 @@
 export const runtime = 'experimental-edge';
 
 import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
+import type { NextRequest } from 'next/server'; 
 
 export function middleware(request: NextRequest) {
   // This replaces the proxy logic by just letting the request through
   // or you can add your specific redirect/proxy logic here if needed.
+  //segseg
   return NextResponse.next();
 }
 
