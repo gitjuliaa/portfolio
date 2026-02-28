@@ -5,7 +5,7 @@ import { Resend } from 'resend';
 import { EmailTemplate } from '@/components/ui/email-template';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-const fromEmail = process.env.FROM_EMAIL;
+const fromEmail = "onboarding@resend.dev";
 
 export async function POST(request: Request) {
   try {
