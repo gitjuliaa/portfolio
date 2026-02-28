@@ -28,10 +28,7 @@ function getWebSiteJsonLd(): WithContext<WebSite> {
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
-  title: {
-    default: siteConfig.title,
-    template: `%s | ${siteConfig.title}`,
-  },
+  title: 'Julia A • Developer Portfolio',
   description: siteConfig.description,
   keywords: Array.isArray(siteConfig.keywords)
     ? siteConfig.keywords.join(', ')
@@ -47,7 +44,6 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  icons: siteConfig.icons,
 
   openGraph: {
     type: 'website',
@@ -60,7 +56,7 @@ export const metadata: Metadata = {
         url: '/opengraph-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Preview of PS Parwez Portfolio',
+        alt: 'Preview of Julia A Portfolio',
       },
     ],
   },
@@ -77,7 +73,7 @@ export const metadata: Metadata = {
   },
   authors: [
     {
-      name: siteConfig.author?.name ?? 'PS Parwez',
+      name: siteConfig.author?.name ?? 'Julia A',
       url: siteConfig.author?.url ?? siteConfig.url,
     },
   ],
@@ -97,13 +93,6 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
-        <link
-          rel='icon'
-          href='/favicon.ico'
-          sizes='any'
-          type='image/x-icon'
-        />
-
         <Script
           id='website-jsonld'
           type='application/ld+json'
