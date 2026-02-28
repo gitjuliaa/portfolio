@@ -1,6 +1,7 @@
+export const runtime = 'edge'; // <--- ADD THIS LINE FIRST
+
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
-
 import { EmailTemplate } from '@/components/ui/email-template';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
