@@ -1,32 +1,33 @@
-export const runtime = 'edge'; // <--- ADD THIS LINE FIRST
+export const runtime = 'edge'; // This must stay at the very top
 
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 import { EmailTemplate } from '@/components/ui/email-template';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Use the placeholder trick to bypass the build-time check
+const apiKey = process.env.RESEND_API_KEY || 're_placeholder_for_build';
+const resend = new Resend(apiKey);
 const fromEmail = "onboarding@resend.dev";
 
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    console.log('Request Body:', body);
-
     const { name, email } = body;
+
     if (!email || !name) {
       return NextResponse.json({ error: 'Name and email are required' }, { status: 400 });
     }
 
-    // from: "Acme <onboarding@resend.dev>", // Ensure this email is verified in Resend
     const data = await resend.emails.send({
-      from: fromEmail!,
+      from: fromEmail,
       to: email,
       subject: 'Contact Form Submission',
       react: await EmailTemplate({ firstName: name }),
     });
+
     return NextResponse.json({ data, message: 'Email sent successfully' }, { status: 200 });
   } catch (error) {
-    console.log('Error', error);
-    return NextResponse.json({ error: error }, { status: 500 });
+    console.error('Resend Error:', error);
+    return NextResponse.json({ error: 'Failed to send email' }, { status: 500 });
   }
 }
